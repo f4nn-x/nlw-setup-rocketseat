@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #09090A;
+  background-color: #09090a;
   color: white;
 
   height: 100vh;
@@ -19,27 +19,33 @@ header {
   padding: 48px;
 
   position: fixed;
-  background-color: #09090A;
+  background-color: #09090a;
   width: 100%;
 }
 
 button {
-  border: 1px solid #8B5CF6;
+  border: 1px solid #8b5cf6;
   border-radius: 8px;
   padding: 16px 24px;
-  background-color: transparent;
+  background: transparent;
   color: white;
 
   display: flex;
   align-items: center;
   text-align: center;
 
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 125%;
 
   gap: 12px;
+
+  transition: border 0.7s;
+}
+
+button:hover {
+  border: 1px solid #4c16ca;
 }
 
 #form-habits {
@@ -64,7 +70,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .days {
@@ -82,10 +87,10 @@ button {
 .day div {
   margin-bottom: 8px;
 
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
   font-size: 20px;
   line-height: 125%;
-  color: #A1A1AA;
+  color: #a1a1aa;
 
   text-align: center;
 }
@@ -97,15 +102,15 @@ input {
   width: 64px;
   height: 64px;
 
-  border: 2px solid #27272A;
+  border: 2px solid #27272a;
   border-radius: 8px;
 
-  background-color: #18181B;
+  background-color: #18181b;
 }
 
 input:checked {
-  background-color: #8B5CF6;
-  border: 2px solid #A78BFA;
+  background-color: #8b5cf6;
+  border: 2px solid #a78bfa;
 }
 
 @media (max-width: 570px) {
